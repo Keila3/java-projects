@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args)
     {
         // Configuração
-        String caminho = "dados.csv";
+        String caminho = "descodificador-cvs/dados.csv";
 
         // Abertura segura
         try{
@@ -20,10 +20,11 @@ public class Main {
             String[] dados = linha.split(",");
             System.out.println("Nome: " + dados[0] + "| Idade: " + dados[1]);
         }
+             leitor.close();
 
         }
         catch (IOException e){
-            System.out.println("Erro!");
+            System.out.println("Erro ao ler o arquivo!");
         }
 
       
