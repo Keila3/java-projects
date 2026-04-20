@@ -1,6 +1,3 @@
-Para criar um `README.md` que fica na raiz do repositório (fora das pastas), ele precisa ser uma visão geral do projeto inteiro. Vou estruturar para que ele explique o que é o sistema e como os arquivos se conectam.
-
-Aqui está o conteúdo formatado como bloco de código para você copiar:
 
 ```markdown
 # Projeto: Gestor de Tarefas com Fila de Prioridade
