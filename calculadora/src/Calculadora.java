@@ -1,7 +1,9 @@
 public class Calculadora{
+   // Atributos para armazenar os números a serem operados
    double numero1;
    double numero2;
 
+   // Métodos para realizar as operações matemáticas básicas
    public double somar(){
     return numero1 + numero2;
    }
