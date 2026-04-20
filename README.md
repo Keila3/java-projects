@@ -1,23 +1,24 @@
 # Java Projects
 
-Este repositório reúne pequenos projetos em Java desenvolvidos para prática de lógica, manipulação de strings, estruturas de dados e leitura de arquivos. Cada pasta contém um exercício independente, com seu próprio código e instruções específicas.
+Repositório com pequenos projetos em Java para prática de lógica, leitura de arquivos, estruturas de dados e entrada de dados via terminal. Cada pasta contém um exercício independente, com código e instruções próprias.
 
 ## Projetos
 
-### [Descodificador de CSV](descodificador-cvs/README.md)
-Lê um arquivo CSV e apresenta os dados no terminal, com foco em leitura de arquivos, tratamento de exceções e processamento de texto.
-
-### [Fila de Prioridade](Fila-Prioridade/README.md)
-Implementa uma fila de tarefas ordenada por prioridade, usando orientação a objetos, `ArrayList` e `Comparable`.
-
-### [Tradutor Morse](morse-converter/README.md)
-Converte texto para código Morse a partir da entrada do terminal, explorando estruturas condicionais, laços e `HashMap`.
+- [Descodificador de CSV](descodificador-cvs/README.md): lê um arquivo CSV e exibe os dados no terminal.
+- [Calculadora](calculadora/README.md): calcula soma, subtração, multiplicação e divisão no terminal.
+- [Fila de Prioridade](Fila-Prioridade/README.md): organiza tarefas por prioridade usando orientação a objetos.
+- [Tradutor Morse](morse-converter/README.md): converte texto para código Morse a partir da entrada do terminal.
 
 ## Estrutura do repositório
 
 ```text
 .
 ├── README.md
+├── calculadora/
+│   ├── README.md
+│   └── src/
+│       ├── Calculadora.java
+│       └── Main.java
 ├── descodificador-cvs/
 │   ├── dados.csv
 │   ├── README.md
@@ -30,28 +31,32 @@ Converte texto para código Morse a partir da entrada do terminal, explorando es
 │       ├── Main.java
 │       └── Tarefa.java
 └── morse-converter/
-	├── README.md
-	└── src/
-		└── Main.java
+    ├── README.md
+    └── src/
+        └── Main.java
 ```
 
 ## Requisitos
 
 - Java Development Kit (JDK) instalado
-- Terminal acessível no diretório do projeto desejado
+- Terminal aberto na pasta do projeto desejado
 
 ## Como executar
 
-Cada projeto deve ser executado a partir da sua própria pasta. Em geral, os comandos seguem este padrão:
+Em geral, cada projeto pode ser executado a partir da sua própria pasta com os comandos abaixo:
 
 ```bash
 javac src/*.java
 java -cp src Main
 ```
 
-No caso do projeto de CSV, mantenha o arquivo `dados.csv` dentro da pasta do projeto para que a leitura funcione corretamente.
+No projeto de CSV, mantenha o arquivo `dados.csv` dentro da pasta do projeto para que a leitura funcione corretamente.
 
 ## Observações
 
-- Os READMEs individuais trazem instruções mais detalhadas de cada exercício.
+- Os READMEs individuais trazem detalhes específicos de cada exercício.
 - O repositório está organizado como uma coleção de estudos, então cada projeto pode ser compilado e executado de forma independente.
+
+---
+
+*Este projeto faz parte do portfólio de estudos em Análise e Desenvolvimento de Sistemas.*

@@ -1,38 +1,47 @@
-# Sistema de Fila de Prioridades em Java
+# Fila de Prioridade em Java
 
-Este projeto implementa uma lista de tarefas onde a ordem de execução não é definida apenas pela ordem de chegada, mas pelo nível de importância (prioridade) atribuído a cada tarefa.
+Projeto em Java que organiza tarefas por nível de prioridade. A ordem de execução não depende apenas da chegada, mas do valor atribuído a cada tarefa.
 
-## 🚀 Funcionalidades
+## Funcionalidades
 
-* **Adicionar Tarefa:** Cria uma tarefa com nome e nível de prioridade (ex: 1 a 5).
-* **Ordenação Automática:** Utiliza a interface `Comparable` para garantir que tarefas com maior prioridade fiquem no topo da fila.
-* **Remover Próxima:** Retira e exibe a tarefa mais importante da fila.
-* **Exibição Completa:** Lista todas as tarefas pendentes na ordem em que serão executadas.
+- Adicionar tarefas com nome e prioridade
+- Ordenar automaticamente as tarefas pela prioridade
+- Remover a próxima tarefa da fila
+- Exibir todas as tarefas pendentes na ordem de execução
 
-## 🛠️ Estrutura do Código
+## Requisitos
 
-O sistema é dividido em três classes principais:
+- Java Development Kit (JDK) instalado
+- Terminal aberto na pasta do projeto
 
-1.  **Tarefa.java:** Define o objeto tarefa, seus atributos e a lógica de comparação (`compareTo`).
-2.  **FilaPrioridade.java:** Gerencia o `ArrayList` de tarefas, lidando com a inserção, ordenação e remoção.
-3.  **Main.java:** Interface via terminal que interage com o usuário através de um menu dinâmico.
+## Como executar
 
-## 💻 Como Executar
+1. Abra o terminal dentro da pasta `Fila-Prioridade`.
+2. Compile os arquivos Java:
 
-1.  Certifique-se de ter o **JDK** instalado em sua máquina.
-2.  Compile os arquivos:
-    ```bash
-    javac Tarefa.java FilaPrioridade.java Main.java
-    ```
-3.  Execute a classe principal:
-    ```bash
-    java Main
-    ```
+```bash
+javac src/*.java
+```
 
-## 🧠 Conceitos Aplicados
+3. Execute o programa:
 
-* **Orientação a Objetos:** Encapsulamento, construtores e métodos.
-* **Collections API:** Uso de `ArrayList` e `Collections.sort()`.
-* **Interface Comparable:** Sobrescrita do método `compareTo` para lógica de ordenação personalizada.
-* **Entrada de Dados:** Manipulação de fluxo com a classe `Scanner`.
+```bash
+java -cp src Main
+```
+
+## Estrutura do projeto
+
+```text
+Fila-Prioridade/
+├── README.md
+└── src/
+    ├── FilaPrioridade.java
+    ├── Main.java
+    └── Tarefa.java
+```
+
+## Observações
+
+- O projeto usa orientação a objetos, `ArrayList` e `Comparable`.
+- A interface é feita via terminal com `Scanner`.
 
