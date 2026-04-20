@@ -1,9 +1,11 @@
 import java.util.Scanner;
 
-
+public class Main {
 public static void main(String[] args) {
     Scanner leitor = new Scanner(System.in);
     Calculadora calc = new Calculadora();
+    String continuar;
+
 
     do{
         System.out.println("Digite o número da opção deseja: ");
@@ -13,9 +15,12 @@ public static void main(String[] args) {
         System.out.println("|4| Dividir: ");
         int opcao = leitor.nextInt();
         if (opcao <= 4 && opcao >= 1){
-            System.out.println("Digite o primeiro número: ");
-            double num1 = leitor.nextDouble();
-            double num2 = leitor.nextDouble();
+           System.out.println("Digite o primeiro número: ");
+           double num1 = leitor.nextDouble();
+
+           System.out.println("Digite o segundo número: ");
+           double num2 = leitor.nextDouble();
+
             calc.numero1 = num1;
             calc.numero2 = num2;
 
@@ -37,13 +42,18 @@ public static void main(String[] args) {
                     System.out.println("Erro! opção invalida");
                     break;
             }
-            System.out.println("Deseja continuar? [S/N] ");
+            
             
         }
 
+        else {
+           System.out.println("Opção inválida!");
+        }
+
+        System.out.println("Deseja continuar? [S/N] ");
+        continuar = leitor.next().toUpperCase();
 
 
-    } while () {
-        
-    }
-}
+
+    } while (continuar.equals("S"));
+}}
