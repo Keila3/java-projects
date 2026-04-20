@@ -1,39 +1,57 @@
-Para criar um `README.md` que fica na raiz do repositório (fora das pastas), ele precisa ser uma visão geral do projeto inteiro. Vou estruturar para que ele explique o que é o sistema e como os arquivos se conectam.
+# Java Projects
 
-Aqui está o conteúdo formatado como bloco de código para você copiar:
+Este repositório reúne pequenos projetos em Java desenvolvidos para prática de lógica, manipulação de strings, estruturas de dados e leitura de arquivos. Cada pasta contém um exercício independente, com seu próprio código e instruções específicas.
 
-```markdown
-# Projeto: Gestor de Tarefas com Fila de Prioridade
+## Projetos
 
-Este repositório contém um sistema desenvolvido em Java para gerenciamento de tarefas. O diferencial deste sistema é a implementação de uma **Fila de Prioridade**, onde tarefas mais urgentes são movidas automaticamente para o início da fila de execução.
+### [Descodificador de CSV](descodificador-cvs/README.md)
+Lê um arquivo CSV e apresenta os dados no terminal, com foco em leitura de arquivos, tratamento de exceções e processamento de texto.
 
-## 📋 Sobre o Projeto
+### [Fila de Prioridade](Fila-Prioridade/README.md)
+Implementa uma fila de tarefas ordenada por prioridade, usando orientação a objetos, `ArrayList` e `Comparable`.
 
-O objetivo deste projeto foi aplicar conceitos fundamentais de **Programação Orientada a Objetos (POO)** e manipulação de **Estruturas de Dados** dinâmicas em Java.
+### [Tradutor Morse](morse-converter/README.md)
+Converte texto para código Morse a partir da entrada do terminal, explorando estruturas condicionais, laços e `HashMap`.
 
-Diferente de uma fila comum (FIFO), este sistema utiliza uma lógica de comparação para reordenar os elementos sempre que uma nova tarefa é adicionada.
+## Estrutura do repositório
 
-## 🗂️ Organização dos Arquivos
-
-O projeto é composto por três arquivos principais que trabalham em conjunto:
-
-* **`Tarefa.java`**: A classe base que representa o objeto "Tarefa", contendo nome, prioridade e a regra de comparação.
-* **`FilaPrioridade.java`**: A classe responsável por armazenar a lista de tarefas e garantir a organização por prioridade.
-* **`Main.java`**: O ponto de entrada do programa, contendo o menu interativo e a lógica de comunicação com o utilizador.
-
-## ⚙️ Requisitos de Execução
-
-* Java Development Kit (JDK) 8 ou superior.
-* Terminal ou IDE (VS Code, IntelliJ, Eclipse).
-
-## 🛠️ Tecnologias Utilizadas
-
-* **Java SE**: Linguagem principal.
-* **ArrayList**: Para armazenamento dinâmico.
-* **Collections.sort**: Para a ordenação automática baseada na interface `Comparable`.
-* **Scanner**: Para interatividade via terminal.
-
-
----
-*Este projeto faz parte do portfólio de estudos em Análise e Desenvolvimento de Sistemas.*
+```text
+.
+├── README.md
+├── descodificador-cvs/
+│   ├── dados.csv
+│   ├── README.md
+│   └── src/
+│       └── Main.java
+├── Fila-Prioridade/
+│   ├── README.md
+│   └── src/
+│       ├── FilaPrioridade.java
+│       ├── Main.java
+│       └── Tarefa.java
+└── morse-converter/
+	├── README.md
+	└── src/
+		└── Main.java
 ```
+
+## Requisitos
+
+- Java Development Kit (JDK) instalado
+- Terminal acessível no diretório do projeto desejado
+
+## Como executar
+
+Cada projeto deve ser executado a partir da sua própria pasta. Em geral, os comandos seguem este padrão:
+
+```bash
+javac src/*.java
+java -cp src Main
+```
+
+No caso do projeto de CSV, mantenha o arquivo `dados.csv` dentro da pasta do projeto para que a leitura funcione corretamente.
+
+## Observações
+
+- Os READMEs individuais trazem instruções mais detalhadas de cada exercício.
+- O repositório está organizado como uma coleção de estudos, então cada projeto pode ser compilado e executado de forma independente.

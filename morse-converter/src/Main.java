@@ -8,7 +8,7 @@ public class Main{
       // HashMap
       HashMap<Character, String> morse = new HashMap<>();
         morse.put('A', ".-");
-        morse.put('B', "-...");
+        morse.put('B', copilot"-...");
         morse.put('C', "-.-.");
         morse.put('D', "-..");
         morse.put('E', ".");
